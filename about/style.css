@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    margin-bottom: 116px;   
+}
+
+@media screen and (max-width: 1350px) {
+    .flex-container {
+        flex-direction: column-reverse;
+        margin: 60px 20px;
+    }
+}
+
+.about-us {
+    max-width: 710px;
+}
+
+.contacts {
+    max-width: 580px;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.option img {
+    margin-right: 30px;
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.option-text h3 {
+    margin: 10px 0px;
+    margin-top: 32px;
+}
+
+.option-text p {
+    margin: 0px;
+}
+
+#contacts-header {
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+h3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.9);
+}

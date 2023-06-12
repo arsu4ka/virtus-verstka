@@ -1,0 +1,90 @@
+body {
+    margin-left: 0px;
+}
+
+
+.container {
+    height: 100%;
+}
+
+.part-1 {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 520px;
+}
+
+.part-1 h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+.part-1 p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 60px;
+}
+
+.part-1 button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(160, 162, 158, 1);
+
+    width: 227px;
+    height: 62px;
+
+    background-color: rgba(17, 17, 19, 1);
+    border-radius: 8px; 
+    border: none;
+}
+
+.part-2 {
+    margin-top: 60px;
+    display: flex;
+    background-color: black;
+}
+
+.part-2 .left {
+    flex: 0 0 20%;
+}
+
+.part-2 .middle {
+    flex: 0 0 70%;
+}
+
+.part-2 .right {
+    background-color: white;
+    flex: 0 0 10%;
+}
+
+.part-2 h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.part-2 .header-text p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+    letter-spacing: -0.011em;
+
+    color: #FFFFFF;
+}

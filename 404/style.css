@@ -1,0 +1,90 @@
+
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+.container {
+    padding: 70px 0px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .container-error-text {
+    margin-right: 81px;
+    max-width: 600px;
+    padding-left: 40px;
+}
+
+.container h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.container p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;    
+    color: rgba(255, 255, 255, 0.9);
+
+    margin-top: 20px;
+}
+
+.container button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    padding: 19px 27px 19px 19px;
+}
+
+.container button img {
+    margin-left: 13px;
+}
+
+.container .container-error-image img {
+    max-width: 650px;
+    max-height: 650px;
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        display: block;
+        padding-bottom: 60px;
+        padding-top: 70px;
+    }
+
+    .container .container-error-text {
+        justify-content: center;
+    }
+
+    .container .container-error-image {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container .container-error-image img {
+        max-width: 650px;
+        max-height: 650px;
+        margin-top: 50px;
+    }
+}
