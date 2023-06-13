@@ -4,6 +4,9 @@ const prevBtn = document.querySelector("button.prev-btn");
 const nextBtn = document.querySelector("button.next-btn");
 const liElems = document.querySelectorAll(".gallery-list li");
 
+function isSmallWidth() {
+    return window.innerWidth <= 1000;
+}
 
 function changeImage(number) {
     imageBefore.setAttribute("src", `images/gallery/list${number}_before.png`);
@@ -30,17 +33,13 @@ function getLiIndex(liElem) {
     return null;
 }
 
-function addActive(liElem) {
-    liElem.setAttribute("class", `li-${getLiIndex(liElem)} active`);
-}
-
-function removeActive(liElem) {
-    liElem.setAttribute("class", `li-${getLiIndex(liElem)}`);
+function toggleActive(liElem) {
+    liElem.classList.toggle("active");
 }
 
 function displayPrevious() {
     oldActive = currentActiveElem();
-    removeActive(oldActive);
+    toggleActive(oldActive);
     oldIndex = getLiIndex(oldActive);
     newIndex = oldIndex - 1;
     
@@ -48,13 +47,13 @@ function displayPrevious() {
         newIndex = liElems.length - 1;
     }
 
-    addActive(getLiByIndex(newIndex));
+    toggleActive(getLiByIndex(newIndex));
     changeImage(newIndex);
 }
 
 function displayNext() {
     oldActive = currentActiveElem();
-    removeActive(oldActive);
+    toggleActive(oldActive);
     oldIndex = getLiIndex(oldActive);
     newIndex = oldIndex + 1;
     
@@ -62,21 +61,43 @@ function displayNext() {
         newIndex = 0;
     }
 
-    addActive(getLiByIndex(newIndex));
+    toggleActive(getLiByIndex(newIndex));
     changeImage(newIndex);
 }
 
 function setNewActive(liElem) {
     liElem = liElem.target;
     oldActive = currentActiveElem();
-    removeActive(oldActive);
-    addActive(liElem);
+    toggleActive(oldActive);
+    toggleActive(liElem);
     changeImage(getLiIndex(liElem));
 }
 
-liElems.forEach(element => {
-    element.addEventListener("click", setNewActive);
-});
+function toggleDropDown(viaButton = false) {
+    var dropdownItems = document.querySelectorAll(".gallery-list li:not(.active)");
+    for (var i = 0; i < dropdownItems.length; i++) {
+        if (isSmallWidth() && !viaButton) {
+            dropdownItems[i].classList.toggle("dropdown");
+        } else {
+            if (!dropdownItems[i].classList.contains("dropdown")) {
+                dropdownItems[i].classList.add("dropdown")
+            }
+        }
+    }
 
-prevBtn.addEventListener("click", displayPrevious);
-nextBtn.addEventListener("click", displayNext);
+    currentActiveElem().classList.remove("dropdown");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    toggleDropDown();
+
+    liElems.forEach(element => {
+        element.addEventListener("click", setNewActive);
+        element.addEventListener("click", function() { toggleDropDown(false); })
+    });
+
+    prevBtn.addEventListener("click", displayPrevious);
+    prevBtn.addEventListener("click", function() { toggleDropDown(true); });
+    nextBtn.addEventListener("click", displayNext);
+    nextBtn.addEventListener("click", function() { toggleDropDown(true); });
+});

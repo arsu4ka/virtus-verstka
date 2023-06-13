@@ -21,6 +21,14 @@ body {
     align-items: center;
 }
 
+.gallery-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .img-repr {
     display: flex;
     margin: 0px 26px;
@@ -35,6 +43,10 @@ body {
 
 .prev-btn img {
     transform: rotate(180deg);
+}
+
+.next-btn {
+    margin-right: 15px;
 }
 
 .results h1 {
@@ -74,6 +86,17 @@ body {
 .results li.active {
     border-bottom: 1px solid white;
     color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery {
+        display: block;
+    }
+
+    .gallery-list .dropdown {
+        display: none;
+    }
+
 }
 
 .services {
