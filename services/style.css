@@ -27,11 +27,18 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+
+    margin-right: 15px;
 }
 
 .img-repr {
     display: flex;
     margin: 0px 26px;
+}
+
+.img-repr img {
+    max-width: 100%;
+    height: auto;
 }
 
 .gallery button {
@@ -43,10 +50,6 @@ body {
 
 .prev-btn img {
     transform: rotate(180deg);
-}
-
-.next-btn {
-    margin-right: 15px;
 }
 
 .results h1 {
@@ -97,6 +100,16 @@ body {
         display: none;
     }
 
+    .gallery-right {
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .img-repr {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .services {
@@ -158,6 +171,7 @@ h1 {
     font-size: 64px;
     line-height: 70px;
     color: #111113;
+    text-align: center;
 }
 
 p {
