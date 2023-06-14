@@ -1,11 +1,10 @@
-
 body {
     margin: 0px;
     background-color: black;
 }
 
 .container {
-    padding: 70px 0px;
+    padding: 70px 30px;
     height: auto;
     display: flex;
     align-items: center;
@@ -13,9 +12,38 @@ body {
 }
 
 .container .container-error-text {
-    margin-right: 81px;
+    flex: 50%;
+    margin-right: 80px;
     max-width: 600px;
-    padding-left: 40px;
+}
+
+.container-error-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+        padding-top: 70px;
+    }
+
+    .container .container-error-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0px;
+        margin-bottom: 40px;
+    }
+
+    .container-error-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .container h1 {
@@ -58,35 +86,4 @@ body {
 
 .container button img {
     margin-left: 13px;
-}
-
-.container .container-error-image img {
-    max-width: 650px;
-    max-height: 650px;
-    margin-right: 40px;
-    width: auto;
-    height: auto;
-}
-
-@media screen and (max-width: 950px) {
-    .container {
-        display: block;
-        padding-bottom: 60px;
-        padding-top: 70px;
-    }
-
-    .container .container-error-text {
-        justify-content: center;
-    }
-
-    .container .container-error-image {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .container .container-error-image img {
-        max-width: 650px;
-        max-height: 650px;
-        margin-top: 50px;
-    }
 }
