@@ -1,16 +1,16 @@
-const imageBefore = document.querySelector("div.img-repr .img-before");
-const imageAfter = document.querySelector("div.img-repr .img-after");
+const imageBefore = document.querySelector(".img-before-after");
 const prevBtn = document.querySelector("button.prev-btn");
 const nextBtn = document.querySelector("button.next-btn");
 const liElems = document.querySelectorAll(".gallery-list li");
 
 function isSmallWidth() {
-    return window.innerWidth <= 1000;
+    const element = document.querySelector('.gallery');
+    const computedStyle = window.getComputedStyle(element);
+    return computedStyle.getPropertyValue('flex-direction') == "column";
 }
 
 function changeImage(number) {
-    imageBefore.setAttribute("src", `images/gallery/list${number}_before.png`);
-    imageAfter.setAttribute("src", `images/gallery/list${number}_after.png`);
+    imageBefore.setAttribute("src", `images/gallery/list${number}.jpg`);
 }
 
 function currentActiveElem() {

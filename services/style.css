@@ -5,35 +5,44 @@ body {
 .results {
     margin-bottom: 60px;
     background-color: black;
-    
     padding: 60px 20px;
 }
 
 .gallery {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
     align-items: center;
+
+    gap: 10px;
 }
 
 .gallery-right {
+    flex: 60%;
+    max-width: 100%;
+
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
-    margin-right: 15px;
+    gap: 30px;
+    padding: 20px 0px; 
 }
 
-.img-repr {
-    display: flex;
-    margin: 0px 26px;
-}
-
-.img-repr img {
-    max-width: 100%;
+.img-before-after {
+    max-width: 570px;
+    width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-list .dropdown {
+        display: none;
+    }
 }
 
 .gallery button {
@@ -76,8 +85,6 @@ body {
     padding-bottom: 16px;
 
     border-bottom: 1px solid #3E4344;
-
-    /* max-width: 580px; */
 }
 
 .results li:hover,
@@ -86,34 +93,18 @@ body {
     color: white;
 }
 
-@media screen and (max-width: 1000px) {
-    .gallery {
-        display: block;
-    }
-
-    .gallery-list .dropdown {
-        display: none;
-    }
-
-    .gallery-right {
-        margin: auto;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .img-repr {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
 .services {
-    position: relative;
+    background-image: url(images/background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transition: 2s;
 }
 
-.bubble-img {
-    position: absolute;
-    transform: matrix(0.95, -0.32, -0.32, -0.95, 0, 0);
+@media screen and (min-width: 1800px) {
+    .services {
+        background-size: cover;
+    }
 }
 
 .cards {
