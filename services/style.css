@@ -179,7 +179,8 @@ p {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    width: 50%;
+    width: 80%;
+    max-width: 850px;
     margin: auto;
 
     margin-top: 80px;
