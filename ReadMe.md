@@ -7,7 +7,7 @@
 
 
 ## [services](https://arsu4ka.github.io/virtus-verstka/services/services.html)
-> ### Ready: ❌
+> ### Ready: ✔
 > ### Checked: ❌
 >> **fixes**: 🚫
 
