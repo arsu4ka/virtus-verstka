@@ -22,12 +22,12 @@ body {
     justify-content: center;
     align-items: center;
 
-    /* gap: 30px; */
+    gap: 15px;
     padding: 20px 0px; 
 }
 
 .img-before-after {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -42,6 +42,8 @@ body {
 }
 
 .gallery button {
+    flex-shrink: 0;
+
     border: none;
     cursor: pointer;
     appearance: none;
