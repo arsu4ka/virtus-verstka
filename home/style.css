@@ -32,7 +32,7 @@ p {
     color: rgba(0, 0, 0, 0.8)
 }
 
-.part-1 button {
+.smooth-button {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -52,13 +52,17 @@ p {
     width: fit-content;
 }
 
-.part-1 button img {
+.smooth-button img {
     margin-left: 13px;
+
+    width: 24px;
+    height: 24px;
 }
 
 .temp {
     background-color: black;
     height: 100px;
+    margin: 50px 0px;
 }
 
 .part-3-text {
@@ -83,7 +87,8 @@ p {
 .card {
     flex-grow: 1;
     padding: 50px;
-    max-width: 300px;
+    width: 300px;
+    height: 500px;
     
     background-color: black;
 
@@ -95,7 +100,18 @@ p {
     border-radius: 18px;
 }
 
-.card img {
+.card .smooth-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    padding: 0px;
+
+    margin: 0px;
+    margin-top: auto;
+}
+
+.card .card-repr {
     width: 80px;
     width: 80px;
 }
@@ -122,38 +138,11 @@ p {
     color: #FFFFFF;
 }
 
-.card button {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #A0A29E;
-
-    background-color: black;
-    border: none;
-    border-radius: 8px;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: auto;
-    padding: 0px;
-
-    margin: 0px;
-    margin-top: auto;
-}
-
-.card button img {
-    margin-left: 13px;
-
-    width: 24px;
-    height: 24px
-}
-
 .big-card {
-    width: 70%;
-    padding: 20px auto;
+    width: 80%;
+    padding: 60px 0px;
+    
+
     margin: 50px auto;
 
     display: flex;
@@ -167,7 +156,7 @@ p {
 }
 
 .big-card .steps {
-    width: 80%;
+    width: 85%;
 
     display: flex;
     flex-direction: row;
@@ -211,24 +200,121 @@ p {
 }
 
 .big-card button {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: black;
-
+    margin-top: 0px;
     background-color: white;
-    border: none;
-    border-radius: 8px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 19px;
+    color: black;
 }
 
-.big-card button img {
-    margin-left: 13px;
+.part-4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-evenly;
+
+}
+
+.text-left {
+    margin: auto 0px;
+}
+
+.text-left h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.part-4 .clients-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.part-4 .clients-logo img {
+    width: 200px;
+    height: 80px;
+}
+
+.part-6 {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-left: 20px;
+}
+
+.part-6-text-left {
+    width: 340px;
+}
+
+.part-6-text-left button {
+    margin-left: 0px;
+}
+
+.gallery-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 15px;
+    padding: 20px 0px; 
+}
+
+.review-img {
+    border-radius: 20px;
+    border: none;
+
+    max-width: 80%;
+    height: auto;
+}
+
+.part-6-text-left h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+
+    text-align: left;
+}
+
+.part-6-text-left button {
+    background-color: white;
+    color: black;
+}
+
+.gallery-right button {
+    flex-shrink: 0;
+
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+}
+
+.prev-btn img {
+    transform: rotate(180deg);
+}
+
+.part-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    max-width: 940px;
+    margin: auto;
+}
+
+.part-7 h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
 }
