@@ -2,6 +2,22 @@ body {
     margin: 0px;
 }
 
+.container {
+    background-image: url(images/background.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position-y: top;
+
+    transition: 2s;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        background: none;
+    }
+}
+
 .part-1 {
     display: flex;
     flex-direction: column;
