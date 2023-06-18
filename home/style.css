@@ -59,10 +59,106 @@ p {
     height: 24px;
 }
 
-.temp {
+.part-2 {
     background-color: black;
-    height: 100px;
-    margin: 50px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    padding-left: 30px;
+}
+
+.part-2-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 50px;
+}
+
+.part-2-main .advantages-list {
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.part-2-main .advantage {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: left;
+
+    gap: 30px;
+}
+
+.part-2-main .advantage img {
+    margin-top: 10px;
+}
+
+.part-2-main-img {
+    border-radius: 40px;
+    border: 2.7841px solid #FFFFFF;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.part-2-main-img img {
+    max-width: 80%;
+    height: auto;
+
+    border-radius: 20px;
+}
+
+.part-2 .top-text h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.part-2 .top-text p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.011em;
+    color: #FFFFFF;
+
+    text-align: center;
+    margin: auto;
+    max-width: 920px;
+}
+
+.part-2-main h3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+
+    margin-top: 0px;
+}
+
+.part-2-main p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
 }
 
 .part-3-text {
@@ -169,6 +265,11 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.big-card .step img {
+    border: none;
+    border-radius: 10px;
 }
 
 .big-card .next-step-img {
