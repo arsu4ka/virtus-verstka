@@ -24,18 +24,31 @@ body {
 }
 
 .about-us img {
+    margin-top: 24px;
+
     max-width: 100%;
     height: auto;
 }
 
-@media screen and (max-width: 1200px) {
+.problem-img {
+    position: relative;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 1235px) {
     .flex-container {
         flex-direction: column-reverse;
         margin: 60px 20px;
+        padding: 0px;
     }
 
     .about-us {
         margin-top: 80px;
+    }
+
+    .contacts {
+        width: 100%;
+        max-width: none;
     }
 }
 
@@ -44,12 +57,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-}
-
-.option img {
-    margin-right: 30px;
-    max-width: 25px;
-    max-height: 25px;
+    gap: 30px;
 }
 
 .option-text h3 {
