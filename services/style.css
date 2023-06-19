@@ -31,6 +31,27 @@ body {
     height: auto;
 }
 
+.results li {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #A0A29E;
+
+    cursor: pointer;
+    transition: 200ms;
+    
+    list-style-type: none;
+    margin-top: 20px;
+    margin-right: 34px;
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid #3E4344;
+
+    max-width: 580px;
+}
+
 @media screen and (max-width: 1200px) {
     .gallery {
         flex-direction: column;
@@ -38,6 +59,19 @@ body {
 
     .gallery-list .dropdown {
         display: none;
+    }
+
+    .gallery-list {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .results li {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        max-width: none;
     }
 }
 
@@ -66,27 +100,6 @@ body {
     margin-top: 0px;
 }
 
-.results li {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    color: #A0A29E;
-
-    cursor: pointer;
-    transition: 200ms;
-    
-    list-style-type: none;
-    margin-top: 20px;
-    margin-right: 34px;
-    padding-bottom: 16px;
-
-    border-bottom: 1px solid #3E4344;
-
-    max-width: 580px;
-}
-
 .results li:hover,
 .results li.active {
     border-bottom: 1px solid white;
@@ -106,8 +119,6 @@ body {
         background-size: cover;
     }
 }
-
-
 
 .cards {
     display: flex;
