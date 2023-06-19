@@ -1,7 +1,7 @@
 # Track of *ready pages* / *changes* / *fixes*
 
 ## [home](https://arsu4ka.github.io/virtus-verstka/home/home.html)
-> ### Ready: ❌
+> ### Ready: ✔
 > ### Checked: ❌
 >> **fixes**: 🚫
 
