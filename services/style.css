@@ -134,6 +134,12 @@ body {
     border-radius: 18px;
 }
 
+@media screen and (max-width: 900px) {
+    .cards {
+        width: 90%;
+    }
+}
+
 .card img {
     width: 80px;
     width: 80px;
