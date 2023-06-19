@@ -645,10 +645,10 @@ p {
 .part-6 {
     background-color: black;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
-    padding-left: 20px;
+    padding: 30px;
 }
 
 @media screen and (max-width: 800px) {
@@ -659,15 +659,12 @@ p {
     }
 }
 
-.part-6-text-left {
-    width: 340px;
-}
-
 .part-6-text-left button {
     margin-left: 0px;
 }
 
 .gallery-right {
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -681,7 +678,7 @@ p {
     border-radius: 20px;
     border: none;
 
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
 }
 
