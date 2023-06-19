@@ -107,11 +107,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .services {
-        background: none;
-    }
-}
+
 
 .cards {
     display: flex;
@@ -123,6 +119,16 @@ body {
     margin: auto;
 }
 
+@media screen and (max-width: 1200px) {
+    .services {
+        background: none;
+    }
+
+    .cards {
+        width: 90%;
+    }
+}
+
 .card {
     flex-grow: 1;
     margin: 10px;
@@ -132,12 +138,6 @@ body {
 
     border: none;
     border-radius: 18px;
-}
-
-@media screen and (max-width: 900px) {
-    .cards {
-        width: 90%;
-    }
 }
 
 .card img {
