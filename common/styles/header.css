@@ -13,10 +13,18 @@
     align-items: center;
     background-color: white;
     width: 100%;
+}
 
+.sticky {
     position: fixed;
     top: 0;
     z-index: 999;
+    width: 100%
+}
+
+.sticky + .container,
+.sticky + .flex-container {
+    padding-top: 102px;
 }
 
 .header img {
