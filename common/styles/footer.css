@@ -49,6 +49,12 @@
     line-height: 24px;
     color: #D0D0CF;
     text-decoration: none;
+
+    transition: 0.4s;
+}
+
+.footer ul a:hover {
+    color: rgb(9, 109, 217);
 }
 
 @media screen and (max-width: 900px) {

@@ -1,9 +1,22 @@
+.smooth-button:hover {
+    background-color: rgb(9, 109, 217);
+    color: rgb(224, 237, 250);
+}
+
+.smooth-button {
+    transition: 0.3s;
+}
+
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
     width: 100%;
+
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 
 .header img {

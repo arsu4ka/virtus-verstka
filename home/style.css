@@ -307,12 +307,6 @@ p {
 }
 
 .card .smooth-button {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: auto;
-    padding: 0px;
-
     margin: 0px;
     margin-top: auto;
 }
