@@ -232,6 +232,8 @@ p {
     margin: auto;
     margin-top: 44px;
     padding: 19px;
+
+    cursor: pointer;
 }
 
 .order button img {

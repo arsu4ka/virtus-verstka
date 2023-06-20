@@ -66,6 +66,7 @@ p {
     padding: 19px 27px 19px 19px;
 
     width: fit-content;
+    cursor: pointer;
 }
 
 .smooth-button img {
