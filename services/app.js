@@ -89,6 +89,21 @@ function toggleDropDown(viaButton = false) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    const url = window.location.href;
+    if (url.includes("?") && url.includes("=")) {
+        const paramsStr = url.split("?");
+        const param = paramsStr[paramsStr.length - 1].split("=");
+        const key = param[0];
+        let value = param[1];
+        if (key === "galleryItem" && Number.isInteger(parseInt(value)) && parseInt(value) < liElems.length) {
+            console.log(key, value);
+            value = parseInt(value);
+            setNewActive({
+                target: document.querySelector(`li.li-${value}`)
+            });
+        }
+    }
+
     toggleDropDown();
 
     liElems.forEach(element => {
