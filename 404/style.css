@@ -82,6 +82,8 @@ body {
     align-items: center;
     margin-top: 40px;
     padding: 19px 27px 19px 19px;
+
+    cursor: pointer;
 }
 
 .container button img {
