@@ -26,6 +26,7 @@ body {
 
     max-width: 940px;
     margin: auto;
+    padding: 15px;
 }
 
 h1 {
@@ -277,6 +278,7 @@ p {
 
     max-width: 940px;
     margin: auto;
+    padding: 15px;
 }
 
 .cards {
@@ -657,6 +659,7 @@ p {
 }
 
 .review-img {
+    flex: 70%;
     border-radius: 20px;
     border: none;
 
@@ -684,10 +687,6 @@ p {
         padding-bottom: 100px;
     }
 
-    .review-img {
-        max-width: 60%;
-    }
-
     .part-6-text-left h1 {
         max-width: 100%;
     }
@@ -712,6 +711,7 @@ p {
     justify-content: center;
     text-align: center;
 
+    padding: 15px;
     max-width: 940px;
     margin: auto;
     margin-bottom: 75px;
