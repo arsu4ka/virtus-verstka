@@ -10,7 +10,7 @@ function isSmallWidth() {
 }
 
 function changeImage(number) {
-    imageBefore.setAttribute("src", `images/services/gallery/list${number}.jpg`);
+    imageBefore.setAttribute("src", `../images/services/gallery/list${number}.jpg`);
 }
 
 function currentActiveElem() {
