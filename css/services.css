@@ -107,7 +107,7 @@ body {
 }
 
 .services {
-    background-image: url(images/background.svg);
+    background-image: url(services_background.svg);
     background-repeat: no-repeat;
     background-size: contain;
 

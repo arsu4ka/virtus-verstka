@@ -14,7 +14,7 @@ function getCurrentActiveIndex() {
 
 function setNewIndex(index) {
     const elem = getImageElement();
-    elem.setAttribute("src", `images/reviews/rev${index}.jpg`)
+    elem.setAttribute("src", `images/home/reviews/rev${index}.jpg`)
 }
 
 function prevBtnTrigger() {

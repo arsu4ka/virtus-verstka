@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-    background-image: url(images/background.svg);
+    background-image: url(home_background.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: scroll;
